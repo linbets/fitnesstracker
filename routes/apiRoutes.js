@@ -29,7 +29,7 @@ router.get('/api/workouts/range', (req, res) => {
     });
 });
 
-router.post('/api/workouts/range', (req, res) => {
+router.post('/api/workouts', (req, res) => {
     Workout.create(req.body).then((workouts) => {
         res.json(workouts);
     });
